@@ -82,19 +82,29 @@
 
 #### **Cluster Evaluation & Selection**
 - **Silhouette Analysis Plot**: Shows optimal k=3 with peak silhouette score
+  ![Silhouette Analysis](images/plots/silhouette_analysis.png)
 - **Davies-Bouldin Curve**: Confirms k=3 as elbow point for minimal within-cluster variance
+  ![Davies-Bouldin Analysis](images/plots/davies_bouldin_analysis.png)
 - **Hierarchical Dendrogram**: Validates 3-cluster structure with clear separation points
+  ![Hierarchical Dendrogram](images/plots/hierarchical_dendrogram.png)
 
 #### **Cluster Structure & Separation**
 - **PCA Scatter Plot**: 2D projection showing clear cluster boundaries in principal component space
+  ![PCA Clusters](images/plots/pca_clusters.png)
 - **t-SNE Visualization**: Non-linear projection confirming cluster cohesion and separation
+  ![t-SNE Clusters](images/plots/tsne_clusters.png)
 - **Correlation Heatmap**: Feature relationships guiding dimensionality reduction choices
+  ![Correlation Heatmap](images/plots/correlation_heatmap.png)
 
 #### **Business Insights & Profiling**
 - **Price Segmentation Chart**: Mean prices across segments ($25 vs $75 vs $180)
+  ![Price Segmentation](images/plots/price_segmentation.png)
 - **Sales Velocity Analysis**: Units sold per available item (0.8 vs 1.4 vs 2.8)
+  ![Sales Velocity](images/plots/sales_velocity.png)
 - **Fragrance Type Distribution**: Stacked bar chart showing format preferences by segment
+  ![Type Distribution](images/plots/type_distribution.png)
 - **Brand Concentration Analysis**: Top 3 brands by segment with market share percentages
+  ![Brand Analysis](images/plots/brand_analysis.png)
 
 ## 💡 Business Implications & Strategic Recommendations
 

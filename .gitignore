@@ -140,3 +140,6 @@ temp/
 output/
 outputs/
 results/
+
+# Images (optional - uncomment if you don't want to commit images)
+# images/
