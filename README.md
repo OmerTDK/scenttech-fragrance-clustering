@@ -82,6 +82,14 @@ jupyter notebook
 - Switch to the "Python (ML Project)" kernel if prompted
 - Run cells sequentially to reproduce the analysis
 
+### 📊 Visualization Preview
+The notebook generates comprehensive visualizations including:
+- **Evaluation Plots**: Silhouette and Davies-Bouldin curves for optimal cluster selection
+- **Dendrograms**: Hierarchical clustering trees showing cluster relationships
+- **Scatter Plots**: PCA and t-SNE projections with color-coded clusters
+- **Business Charts**: Price segmentation and sales performance bar charts
+- **Composition Analysis**: Stacked bar charts showing segment characteristics
+
 ## 📈 Analysis Phases
 
 ### Phase 1 – Data Loading & Structure Check
@@ -100,10 +108,11 @@ jupyter notebook
 - Feature importance assessment
 
 ### Phase 4 – Clustering Models & Evaluation
-- **K-Means Clustering**: Partition-based clustering
-- **Hierarchical Clustering**: Agglomerative clustering with dendrograms
-- **DBSCAN**: Density-based clustering
-- Model evaluation using silhouette scores and Davies-Bouldin index
+- **K-Means Clustering**: Elbow method, silhouette analysis, and Davies-Bouldin evaluation plots
+- **Hierarchical Clustering**: Ward linkage dendrogram with optimal cluster identification
+- **DBSCAN**: Parameter tuning visualization (epsilon vs. clusters/noise ratio)
+- **Model Comparison**: Silhouette scores and Davies-Bouldin indices across all algorithms
+- **Dimensionality Reduction**: PCA and t-SNE visualizations for cluster validation
 
 ### Phase 5 – Cluster Profiling & Business Insights
 - Analyze cluster characteristics
@@ -132,11 +141,16 @@ jupyter notebook
 - Davies-Bouldin Index
 - Elbow Method (within-cluster sum of squares)
 
-### Visualizations
-- Cluster distributions
-- Price segmentation analysis
-- Brand and fragrance type analysis
-- Dimensionality reduction plots (PCA, t-SNE)
+### Key Visualizations
+- **Correlation Heatmap**: Feature relationships and multicollinearity analysis
+- **K-Means Evaluation**: Silhouette scores and Davies-Bouldin index across different k values
+- **Hierarchical Clustering Dendrogram**: Ward linkage clustering tree with optimal cut-point
+- **DBSCAN Parameter Tuning**: Clusters vs noise ratio analysis for epsilon selection
+- **PCA Scatter Plot**: 2D visualization of K-means clusters in principal component space
+- **t-SNE Visualization**: Non-linear dimensionality reduction showing cluster separation
+- **Price Segmentation**: Mean price comparison across identified fragrance segments
+- **Sales Performance**: Units sold analysis by segment with business insights
+- **Format Distribution**: Stacked bar chart showing fragrance type composition within each cluster
 
 ## 📁 Project Structure
 ```
@@ -158,10 +172,23 @@ scenttech-fragrance-clustering/
 
 ## 🎯 Expected Outcomes
 
-### Cluster Insights
-- **3 distinct fragrance segments** identified through clustering analysis
-- Clear price positioning for each segment
-- Brand concentration and market share analysis
+### Key Findings & Visual Insights
+
+#### **Clustering Results**
+- **Optimal K-Means solution**: k=3 clusters identified through silhouette analysis
+- **Cluster separation**: Clear visual separation in both PCA and t-SNE projections
+- **Hierarchical validation**: Dendrogram confirms 3-cluster structure with Ward linkage
+
+#### **Segment Characteristics**
+- **Price Segmentation**: Distinct pricing tiers from budget to premium segments
+- **Sales Performance**: Differential velocity across segments (bestsellers vs. slow-movers)
+- **Format Distribution**: Each cluster shows unique fragrance type preferences
+- **Brand Concentration**: Luxury vs. accessible brand positioning within segments
+
+#### **Business Insights**
+- **Market Gaps**: Identification of underserved price points and fragrance types
+- **Inventory Strategy**: Segment-specific stock allocation recommendations
+- **Marketing Targeting**: Cluster-based customer profiling for personalized campaigns
 
 ### Business Applications
 - **Targeted Marketing**: Segment-specific marketing strategies
